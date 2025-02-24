@@ -1,0 +1,21 @@
+{
+  "name": "burguerproject",
+  "version": "1.0.0",
+  "description": "burguer project",
+  "scripts": {
+    "dev": "live-server . --port=2442"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DAW-MaestreCalatrava/BurguerProject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DAW-MaestreCalatrava/BurguerProject/issues"
+  },
+  "homepage": "https://github.com/DAW-MaestreCalatrava/BurguerProject#readme",
+  "dependencies": {
+    "live-server": "^1.2.2"
+  }
+}
