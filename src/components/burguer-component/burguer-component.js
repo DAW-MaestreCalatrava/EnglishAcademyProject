@@ -13,7 +13,7 @@ class BurguerComponent extends HTMLElement {
     render() {
         this.shadowRoot.innerHTML = /* html */ `
             <style>
-                @import "./src/components/burguer-component/burguer-component.css";
+                @import "../src/components/burguer-component/burguer-component.css";
                 @import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css";
             </style>
             <div class="container">
