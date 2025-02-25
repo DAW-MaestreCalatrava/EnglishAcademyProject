@@ -1,0 +1,13 @@
+button {
+    color: #999;
+    border: none;
+    line-height: 20px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+button:active {
+    color: #fff;
+}
+button:hover {
+    color:  #fff;
+}
