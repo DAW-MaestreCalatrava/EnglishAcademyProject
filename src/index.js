@@ -9,3 +9,4 @@ import "./components/footer-component/footer-component.js";
 import "./components/iconSocial-component/iconSocial-component.js";
 import "./components/contactFooter-component/contactFooter-component.js";
 import "./components/aboutFooter-component/aboutFooter-component.js";
+import "./components/header-component/header-component.js";
