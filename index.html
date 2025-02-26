@@ -23,10 +23,18 @@
     <title>Burguer Project</title>
   </head>
   <body>
-    <my-text size="title">Title</my-text>
+    
     <my-text size="subtitle">Subtitle</my-text>
     <my-text size="body">Body</my-text>
-    <burguer-component></burguer-component>
+    <banner-component
+    image="./src/img/imagenFondo.jpg"
+      services='[
+    {"title": "Diseño Web", "subtitle": "Creamos sitios atractivos"},
+    {"title": "Desarrollo", "subtitle": "Aplicaciones a medida"},
+    {"title": "SEO", "subtitle": "Mejoramos tu visibilidad"}
+  ]'
+    >
+    </banner-component>
 
     <footer>
       <iconSocial-component
