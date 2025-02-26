@@ -1,0 +1,8 @@
+form{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1%;
+}
+my-text{
+    width: 50%;
+}
