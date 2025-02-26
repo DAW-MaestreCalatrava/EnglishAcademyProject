@@ -6,3 +6,4 @@ import "./components/texto/texto.js";
 import "./components/banner-component/banner-component.js";
 import "./components/textarea-component/textarea-component.js";
 import "./components/iconSocial-component/iconSocial-component.js";
+import "./components/header-component/header-component.js";
