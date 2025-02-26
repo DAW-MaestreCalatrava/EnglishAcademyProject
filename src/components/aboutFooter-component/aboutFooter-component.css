@@ -11,7 +11,7 @@
   color: white;
 }
 .icon-container:hover {
-  color: #d8cf9d;
+  color: #353635;
 }
 h1 {
   font-family: "Open Sans";
@@ -23,11 +23,11 @@ h2 {
   font-family: "Open Sans";
   font-size: 16px;
   line-height: 20px;
-  text-align: left;
 }
 
 p {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
+  padding-left: 10px;
 }
