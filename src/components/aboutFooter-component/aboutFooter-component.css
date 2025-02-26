@@ -1,0 +1,33 @@
+.container {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 36px;
+}
+.icon-container {
+  display: inline-block;
+  color: white;
+}
+.icon-container:hover {
+  color: #353635;
+}
+h1 {
+  font-family: "Open Sans";
+  font-size: 36px;
+  line-height: 40px;
+}
+
+h2 {
+  font-family: "Open Sans";
+  font-size: 16px;
+  line-height: 20px;
+}
+
+p {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  padding-left: 10px;
+}

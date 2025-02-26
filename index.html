@@ -23,19 +23,20 @@
     <title>Burguer Project</title>
   </head>
   <body>
-    <my-text size="title">Title</my-text>
+    
     <my-text size="subtitle">Subtitle</my-text>
     <my-text size="body">Body</my-text>
-    <burguer-component></burguer-component>
+    <banner-component
+    image="./src/img/imagenFondo.jpg"
+      services='[
+    {"title": "Diseño Web", "subtitle": "Creamos sitios atractivos"},
+    {"title": "Desarrollo", "subtitle": "Aplicaciones a medida"},
+    {"title": "SEO", "subtitle": "Mejoramos tu visibilidad"}
+  ]'
+    >
+    </banner-component>
 
-    <footer>
-      <iconSocial-component
-        socials='[
-          { "icon": "fa-brands fa-facebook", "link": "https://www.facebook.com/agoraciudadreal" },
-          { "icon": "fa-brands fa-instagram", "link": "https://www.instagram.com" },
-          { "icon": "fa-brands fa-x-twitter", "link": "https://twitter.com" }
-      ]'
-      ></iconSocial-component>
-    </footer>
+    <footer-component></footer-component>
+
   </body>
 </html>
