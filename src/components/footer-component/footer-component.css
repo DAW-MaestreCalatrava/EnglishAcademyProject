@@ -1,0 +1,36 @@
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #302A31; /* Color de fondo opcional */
+    color: white;
+    text-align: center;
+}
+
+.footer-top,
+.footer-bottom {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #000; /* Color de fondo opcional */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px 0;
+}
+
+.contact,
+.about,
+.socials {
+    flex: 3;
+    text-align: left;
+}
+
+.socials {
+    text-align: right;
+}

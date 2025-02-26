@@ -1,7 +1,7 @@
-import styles from "./iconSocial-component.css" with {type: "css"};
-class IconSocialComponent extends HTMLElement {
+import styles from "./contactFooter-component.css" with {type: "css"};
+class ContactFooterComponent extends HTMLElement {
   static get observedAttributes() {
-    return ["socials"];
+    return ["infoContact"];
   }
 
   constructor() {
@@ -12,36 +12,30 @@ class IconSocialComponent extends HTMLElement {
 
   render() {
     // Parseamos el JSON (si es inválido, usamos una lista vacía)
-    let socialList = [];
+    let aboutList = [];
     try {
-      const socials = this.getAttribute("socials");
-      if (socials) {
-        socialList = JSON.parse(socials);
+      const infoContact = this.getAttribute("infoContact");
+      if (infoContact) {
+        aboutList = JSON.parse(infoContact);
       }
     } catch (e) {
-      console.error("Error parsing socials JSON:", e);
+      console.error("Error parsing infoContact JSON:", e);
     }
 
     // Generamos los íconos dinámicamente
-    const iconsHtml = socialList
+    const aboutInfo = aboutList
       .map(
-        (social) => `
-          <a href="${social.link}" target="_blank" class="icon-container">
-            <i class="${social.icon}"></i>
-          </a>
-        `
-      )
+        (about) => `<p>${about.info}</p> `)
       .join("");
-
     this.shadowRoot.adoptedStyleSheets.push(styles);
     this.shadowRoot.innerHTML = /* html */ `
                 <style>
                     @import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css";
                 </style>
               <div class="container">
-              <div>
-              <h2>Siguenos en:</h2>
-                  ${iconsHtml}
+                <div>
+                <h2>Contact Info:</h2>
+                  ${aboutInfo}
                 </div>
               </div>
             `;
@@ -56,4 +50,4 @@ class IconSocialComponent extends HTMLElement {
   }
 }
 
-customElements.define("iconsocial-component", IconSocialComponent);
+customElements.define("contactfooter-component", ContactFooterComponent);
